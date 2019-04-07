@@ -7,7 +7,8 @@ int main(){
     int i,j,k,n,a[200],b[200],c[200],d[10],sl,num,ans;
     //float ans;
     char fuhao[10],fuhao2;
-    n=rand()%40+30;
+    printf("请输入出题数量\n");
+    scanf("%d",&n);
     printf("此次共有%d道题\n",n);
     printf("是否显示结果?是请输入1，否请输入0\n");
     scanf("%d",&sl);
@@ -128,7 +129,7 @@ int main(){
             //if(a[i]<10) printf("%.0f%c%.0f%c%.0f  =%.2f\n",a[i],fuhao[0],b[i],fuhao[1],c[i],ans);
                 printf("%d%c%d%c%d = %d\n",a[i],fuhao[0],b[i],fuhao[1],c[i],ans);
             else if(sl==0)
-                printf("%d%c%d%c%d =\n",a[i],fuhao[0],b[i],fuhao[1],b[i]*c[i]);
+                printf("%d%c%d%c%d =\n",a[i],fuhao[0],b[i],fuhao[1],c[i]);
 
         }
     }
